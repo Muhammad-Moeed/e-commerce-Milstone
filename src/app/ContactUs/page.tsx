@@ -19,18 +19,18 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert('Message sent!');
+    alert('Message sent Successfully!');
     // Handle form submission logic here (e.g., send data to a server)
     setFormData({ name: '', email: '', message: '' }); // Clear the form after submission
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 relative bg-gradient-to-r from-[#a59d84] to-[#ecebde] py-20 ">
-      <h1 className="text-3xl font-bold mb-8 text-center">Contact Us</h1>
+    <div className="container mx-auto px-4 py-8 relative bg-gradient-to-r from-blue-800 to-black py-20 ">
+      <h1 className="text-3xl text-white font-bold mb-8 text-center">Contact Us</h1>
       <div className="max-w-xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <form onSubmit={handleSubmit}>
-          <div className="mb-4  bg-gray-400">
-            <label htmlFor="name" className="block text-lg font-medium">Name</label>
+          <div className="mb-4  bg-black text-black">
+            <label htmlFor="name" className="block text-white pt-2 pl-2 text-lg font-medium">Name</label>
             <input
               type="text"
               id="name"
@@ -42,8 +42,8 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mb-4 bg-gray-400">
-            <label htmlFor="email" className="block text-lg font-medium">Email</label>
+          <div className="mb-4 bg-black text-black">
+            <label htmlFor="email" className="block text-white pt-2 pl-2 text-lg font-medium">Email</label>
             <input
               type="email"
               id="email"
@@ -55,8 +55,8 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mb-4 bg-gray-400">
-            <label htmlFor="message" className="block text-lg font-medium">Message</label>
+          <div className="mb-4 bg-black text-black">
+            <label htmlFor="message" className="block text-white pt-2 pl-2 text-lg font-medium">Message</label>
             <textarea
               id="message"
               name="message"
@@ -67,10 +67,10 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <div className="flex justify-center bg-gray-300">
+          <div className="flex justify-center ">
             <button
               type="submit"
-              className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+              className="px-6 w-full py-3 bg-black text-white text-white font-semibold rounded-lg hover:bg-gray-900 transition"
             >
               Send Message
             </button>
